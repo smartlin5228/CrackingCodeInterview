@@ -1,5 +1,9 @@
 package main.java.ArraysAndStrings;
 
+import org.junit.Test;
+
+import static junit.framework.TestCase.assertTrue;
+
 /**
  * Implement an algorithm to determinae if a string has all unique characters. What if you cannot use additional data structures?
  * Hint: Ask interviewer if the string is an ASCII string or a Unicode string, normally assume it is ASCII string
@@ -16,7 +20,7 @@ public class IsUnique {
             }
             return true;
         }
-//        TODO: Bit Manipulation << , & , |
+// TODO: Bit Manipulation << , & , |
         public boolean isUniqueCharsBit(String string) {
             int checker = 0;
             for (int i = 0; i < string.length(); i++) {
@@ -26,6 +30,13 @@ public class IsUnique {
                 }
             }
             return true;
+        }
+    }
+    public static class UnitTest{
+        @Test
+        public void test() {
+            Solution sol = new IsUnique().new Solution();
+            assertTrue(sol.isUniqueChars("abcd"));
         }
     }
 }
