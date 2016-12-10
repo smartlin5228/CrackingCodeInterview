@@ -20,7 +20,7 @@ public class IsUnique {
             }
             return true;
         }
-// TODO: Bit Manipulation << , & , |
+//TODO: Bit Manipulation << , & , |
         public boolean isUniqueCharsBit(String string) {
             int checker = 0;
             for (int i = 0; i < string.length(); i++) {
@@ -37,6 +37,7 @@ public class IsUnique {
         public void test() {
             Solution sol = new IsUnique().new Solution();
             assertTrue(sol.isUniqueChars("abcd"));
+            assertTrue(sol.isUniqueCharsBit("abcd"));
         }
     }
 }
