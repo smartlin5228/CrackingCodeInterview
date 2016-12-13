@@ -1,8 +1,5 @@
 package main.java.ArraysAndStrings;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
 
 /**
  * Implement a method to perform basi string compression using the counts of repeated characters. For example, the string
